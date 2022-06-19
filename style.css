@@ -1,0 +1,244 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Open Sans";
+  background-color: hsl(193, 100%, 96%);
+}
+
+main {
+  width: 100%;
+  margin: auto;
+}
+
+.container {
+  display: flex;
+  margin: auto;
+}
+.child,
+.child1 {
+  width: 50%;
+  padding: 2em;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.img {
+  width: 100%;
+}
+
+#header {
+  background-image: url("bg-hero-desktop.svg");
+  margin-bottom: 8em;
+}
+
+#one,
+#two,
+#three {
+  margin: 1em auto;
+  width: 90%;
+  background-color: hsl(0, 0%, 97%);
+  border-radius: 15px;
+  box-shadow: mintcream 2px 2px 2px 2px;
+}
+
+#three {
+  margin-bottom: 15em;
+}
+
+#footer {
+  position: relative;
+  background-color: hsl(192, 100%, 9%);
+  padding: 1em;
+  padding-top: 10%;
+  padding-bottom: 2em;
+}
+
+.absolute {
+  background-color: hsl(0, 0%, 97%);
+  width: 60%;
+  padding: 3em;
+  position: absolute;
+  top: -30%;
+  left: 20%;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: mintcream 2px 2px 2px 2px;
+}
+
+.fitems {
+  margin: 2em;
+}
+
+p {
+  color: hsl(208, 11%, 55%);
+}
+
+.child1 h3 {
+  margin: 1em;
+  margin-left: 22px;
+}
+
+.child1 p {
+  margin: 1em;
+  font-size: 18px;
+}
+
+h1,
+h3 {
+  font-family: "Poppins";
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 3em;
+  text-align: left;
+  margin: 1em;
+  margin-left: 18px;
+}
+
+.child1 {
+  text-align: left;
+}
+
+h3 {
+  font-size: 2em;
+}
+
+.top {
+  width: 100%;
+  padding: 2em;
+}
+
+.whitelogo {
+  filter: brightness(0) invert(1);
+  margin-left: 25px;
+}
+
+i {
+  margin: 0.5em;
+}
+
+.try {
+  float: right;
+  padding: 1em;
+  background-color: hsl(0, 0%, 97%);
+  border-radius: 35px;
+  border: none;
+  width: 10%;
+  box-shadow: hsl(191, 69%, 82%) 2px 2px 2px 2px;
+}
+
+.try:hover {
+  cursor: pointer;
+
+  box-shadow: hsl(0, 0%, 97%) 2px 2px 2px 2px inset;
+  background-color: hsl(191, 69%, 82%);
+}
+
+.getstart {
+  margin-left: 1em;
+  padding: 1.5em 2em;
+  background-color: hsl(322, 100%, 66%);
+  border-radius: 35px;
+  color: hsl(0, 0%, 97%);
+  border: none;
+  width: 50%;
+  font-size: 1em;
+  box-shadow: hsl(322, 100%, 20%) 3px 3px 3px 3px;
+}
+
+.getstart:hover {
+  cursor: pointer;
+  background-color: hsl(322, 100%, 66%);
+  box-shadow: hsl(322, 100%, 20%) 3px 3px 3px 3px inset;
+}
+
+.getfree {
+  margin-top: 1em;
+  padding: 1.5em 2em;
+  border-radius: 35px;
+  background-color: hsl(322, 100%, 66%);
+  color: hsl(0, 0%, 97%);
+  border: none;
+  width: 50%;
+  font-size: 1em;
+  box-shadow: hsl(322, 100%, 20%) 3px 3px 3px 3px;
+}
+.getfree:hover {
+  cursor: pointer;
+  background-color: hsl(322, 100%, 66%);
+  box-shadow: hsl(322, 100%, 20%) 3px 3px 3px 3px inset;
+}
+
+@media only screen and (max-width: 1039px) {
+  #fcontainer {
+    margin-top: 15%;
+  }
+  .getstart {
+    width: 70%;
+  }
+  .try {
+    width: 30%;
+  }
+  .getfree {
+    width: 65%;
+  }
+}
+
+@media only screen and (max-width: 732px) {
+  .getstart {
+    width: 90%;
+  }
+  .getfree {
+    width: 85%;
+  }
+
+  #fcontainer {
+    margin-top: 25%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #header {
+    background-image: url("bg-hero-mobile.svg");
+  }
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+  h1,
+  h3 {
+    text-align: center;
+  }
+  .child,
+  .child1 {
+    width: 100%;
+    text-align: center;
+  }
+  .absolute {
+    top: -15%;
+    width: 90%;
+    left: 5%;
+  }
+  #fcontainer {
+    margin-top: 40%;
+  }
+}
+@media only screen and (max-width: 440px) {
+  .top img {
+    width: 50%;
+  }
+  .absolute h3 {
+    font-size: 22px;
+  }
+  .getfree {
+    width: 95%;
+    font-size: 12px;
+  }
+  #fcontainer {
+    margin-top: 45%;
+  }
+}
