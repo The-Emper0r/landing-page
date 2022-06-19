@@ -131,12 +131,6 @@ i {
   box-shadow: hsl(191, 69%, 82%) 2px 2px 2px 2px;
 }
 
-.try:hover {
-  cursor: pointer;
-
-  box-shadow: hsl(0, 0%, 97%) 2px 2px 2px 2px inset;
-  background-color: hsl(191, 69%, 82%);
-}
 
 .getstart {
   margin-left: 1em;
@@ -150,11 +144,6 @@ i {
   box-shadow: hsl(322, 100%, 20%) 3px 3px 3px 3px;
 }
 
-.getstart:hover {
-  cursor: pointer;
-  background-color: hsl(322, 100%, 66%);
-  box-shadow: hsl(322, 100%, 20%) 3px 3px 3px 3px inset;
-}
 
 .getfree {
   margin-top: 1em;
@@ -166,11 +155,6 @@ i {
   width: 50%;
   font-size: 1em;
   box-shadow: hsl(322, 100%, 20%) 3px 3px 3px 3px;
-}
-.getfree:hover {
-  cursor: pointer;
-  background-color: hsl(322, 100%, 66%);
-  box-shadow: hsl(322, 100%, 20%) 3px 3px 3px 3px inset;
 }
 
 @media only screen and (max-width: 1039px) {
@@ -213,9 +197,16 @@ i {
   h3 {
     text-align: center;
   }
+  h1 {
+    margin: auto;
+  }
   .child,
   .child1 {
     width: 100%;
+    text-align: center;
+  }
+  
+  .fitems {
     text-align: center;
   }
   .absolute {
